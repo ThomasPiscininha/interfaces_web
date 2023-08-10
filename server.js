@@ -1,3 +1,11 @@
-let texto = 'Olá mundo .... Ayayaya abababa';
+const express = require('express');
 
-console.log(texto);
+const app = express();
+
+app.get('/',()=>{
+    response.send("Olá mundo ... ayaya ababa")
+})
+
+app.listen(8000,()=>{
+    console.log("Abrindo servidor 🎈");
+})
